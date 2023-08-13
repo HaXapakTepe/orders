@@ -1,0 +1,171 @@
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+input,
+button {
+  font: inherit;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+fieldset {
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat";
+  font-weight: 400;
+  @include fluid(font-size, 18px, 20px);
+  color: #101820;
+  line-height: normal;
+  background-color: #EDEDED;
+  overflow-x: hidden;
+
+  &.no-scroll {
+    overflow-y: hidden;
+  }
+}
+
+.wrapper {
+  position: relative;
+  min-width: 320px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  // margin-left: auto;
+  // margin-right: auto;
+  // max-width: 1440px;
+  overflow-x: hidden;
+
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 72px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 1px;
+    background-color: #87A1B8;
+  }
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  @include container;
+  @include fluid(width, 962px, 1168px);
+}
+
+h1,
+h2 {
+  color: #35475D;
+  @include fluid(font-size, 40px, 50px);
+  font-weight: 600;
+}
+
+h3 {
+  @include fluid(font-size, 24px, 32px);
+  letter-spacing: 3.2px;
+  font-weight: 400;
+}
+
+.logo {
+  &__img {
+    -o-object-fit: contain;
+    object-fit: contain;
+    @include fluid(height, 40px, 47px);
+  }
+}
+
+.logo {
+  &__img {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 57px;
+  }
+}
+
+.btn,
+.link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include fluid(min-width, 100px, 198px);
+  gap: 10px;
+  color: #49586B;
+  @include fluid(font-size, 14px, 16px);
+  font-weight: 500;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  @include fluid(padding-top, 10px, 12px);
+  @include fluid(padding-bottom, 10px, 12px);
+  @include fluid(padding-left, 20px, 35px);
+  @include fluid(padding-right, 20px, 35px);
+  border: 1px solid #49586B;
+  background-color: #EDEDED;
+
+  svg {
+    width: 5px;
+    height: 8px;
+    transition: transform .38s ease-in-out;
+  }
+
+  &:hover {
+    & svg {
+      transform: translateX(5px);
+    }
+  }
+}
+
+.border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #87A1B8;
+  @include fluid(padding-top, 10px, 20px);
+  @include fluid(padding-bottom, 10px, 20px);
+  @include fluid(padding-left, 15px, 20px);
+  @include fluid(padding-right, 15px, 20px);
+  @include fluid(margin-bottom, 20px, 70px);
+}

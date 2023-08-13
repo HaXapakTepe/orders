@@ -1,0 +1,86 @@
+.edge {
+  position: relative;
+  @include fluid(margin-top, 60px, 145px);
+  @include fluid(margin-bottom, 60px, 145px);
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1121px;
+    width: 84%;
+    left: 0;
+    bottom: -156px;
+    background-image: url('../images/about/bg-2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @include fluid(gap, 20px, 60px);
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include fluid(padding-left, 15px, 62px);
+    @include fluid(padding-right, 15px, 62px);
+    @include fluid(padding-top, 45px, 90px);
+    @include fluid(padding-bottom, 45px, 90px);
+    overflow: hidden;
+
+    &--center {
+      border: 1px solid #87A1B8;
+    }
+
+    &--left {
+      border-bottom: 1px solid #87A1B8;
+      border-right: 1px solid #87A1B8;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/edge/1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &--right {
+      border-bottom: 1px solid #87A1B8;
+      border-left: 1px solid #87A1B8;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/edge/2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  &__icon {
+    font-size: 72px;
+    @include fluid(font-size, 50px, 72px);
+    color: #87A1B8;
+    @include fluid(margin-bottom, 20px, 55px);
+  }
+
+  &__text {
+    @include fluid(font-size, 14px, 16px);
+    font-weight: 500;
+  }
+}

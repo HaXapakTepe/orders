@@ -1,0 +1,16 @@
+.content {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 921px;
+    right: 0;
+    top: 60px;
+    background-image: url('../images/popular/bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+}

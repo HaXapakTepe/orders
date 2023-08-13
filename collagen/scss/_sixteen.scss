@@ -1,0 +1,131 @@
+.sixteen {
+  &__wrapper {
+    position: relative;
+
+    &:nth-child(1) {
+      .sixteen__img {
+        -o-object-position: top;
+        object-position: top;
+      }
+    }
+
+    &:nth-child(2) {
+      .sixteen__img {
+        -o-object-position: center;
+        object-position: center;
+      }
+    }
+
+    &:nth-child(3) {
+      .sixteen__img {
+        -o-object-position: bottom;
+        object-position: bottom;
+      }
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  &__top {
+    @include fluid(padding, 20px, 80px);
+
+    &-title {
+      @include fluid(margin-bottom, 15px, 30px);
+    }
+
+    &-box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      @include fluid(gap, 15px, 20px);
+    }
+
+    &-subtitle {
+      @include fluid(font-size, 18px, 26px);
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 15px, 30px);
+    }
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 10px, 20px);
+    }
+
+    &-text {
+      @include fluid(font-size, 16px, 24px);
+    }
+  }
+
+  &__inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include fluid(padding, 20px, 80px);
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 20px, 40px);
+    }
+
+    &-subtitle {
+      position: relative;
+      @include fluid(font-size, 18px, 26px);
+
+      span {
+        overflow-x: hidden;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 57%;
+        height: 27px;
+        right: 0;
+        bottom: 0;
+        background-image: radial-gradient(circle, white 10%, transparent 10%);
+        background-repeat: repeat;
+        background-size: 20px 35px;
+        pointer-events: none;
+      }
+    }
+
+    &-box {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 5px, 10px);
+    }
+
+    &-text {
+      @include fluid(font-size, 14px, 18px);
+      font-weight: 300;
+      max-width: 80%;
+    }
+
+    .sixteen__img {
+      width: 50%;
+      right: 0;
+      left: auto;
+      -o-object-fit: contain;
+      object-fit: contain;
+
+      &--height {
+        height: 80%;
+      }
+    }
+  }
+
+}

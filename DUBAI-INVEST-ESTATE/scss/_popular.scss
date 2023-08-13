@@ -1,0 +1,97 @@
+.popular {
+  @include fluid(margin-top, 60px, 120px);
+  @include fluid(margin-bottom, 60px, 120px);
+
+  &__inner {
+    position: relative;
+  }
+
+  &__slide {
+    position: relative;
+
+    &-img {
+      @include fluid(height, 415px, 688px);
+      -o-object-fit: cover;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    &-box {
+      position: absolute;
+      @include fluid(top, 20px, 38px);
+      @include fluid(left, 30px, 45px);
+    }
+
+    &-title {
+      color: #FFF;
+      @include fluid(font-size, 26px, 36px);
+      font-weight: 500;
+    }
+
+    &-price {
+      color: #A4A4A4;
+      @include fluid(font-size, 20px, 24px);
+      font-weight: 500;
+    }
+  }
+
+  &__prev,
+  &__next {
+    transition: opacity .38s ease-in-out,
+      transform .38s ease-in-out;
+
+    &::after {
+      position: absolute;
+      @include fluid(width, 50px, 89px);
+      @include fluid(height, 50px, 89px);
+      background-repeat: no-repeat;
+      background-size: contain;
+      font-size: 0;
+      transition: transform .38s ease-in-out;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      @include fluid(width, 60px, 107px);
+      @include fluid(height, 60px, 107px);
+      background-color: rgba(250, 250, 250, 0.5);
+      border-radius: 50%;
+    }
+  }
+
+  &__prev {
+    &:before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &::after {
+      background-image: url('../images/icons/swiper-left.svg');
+    }
+
+    &:hover {
+      &::after {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__next {
+    &::before {
+      right: 50%;
+      transform: translateX(50%);
+    }
+
+    &::after {
+      background-image: url('../images/icons/swiper-right.svg');
+    }
+
+
+    &:hover {
+      &::after {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.contacts {
+  @include fluid(margin-top, 67px, 87px);
+  @include fluid(margin-bottom, 93px, 120px);
+  overflow-x: hidden;
+
+  &__title {
+    margin-bottom: 67px;
+  }
+
+  &__city {
+    margin-bottom: 20px;
+    color: #272727;
+    font-family: "Ardeco", sans-serif;
+    font-size: 24px;
+    line-height: 1.1;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    gap: 20px;
+  }
+
+  &__target {
+    display: grid;
+    grid-auto-rows: 1fr;
+    @include fluid(gap, 12px, 20px);
+
+    &-item {
+      display: flex;
+      align-items: center;
+      color: #272727;
+      font-weight: 700;
+      @include fluid(font-size, 14px, 18px);
+      border-radius: 8px;
+      background-color: #FFF;
+      @include fluid(padding-top, 16px, 11px);
+      @include fluid(padding-bottom, 16px, 11px);
+      padding-left: 26px;
+      padding-right: 26px;
+      cursor: pointer;
+    }
+
+    &-text {
+      @include fluid(max-width, 194px, 291px);
+    }
+  }
+}

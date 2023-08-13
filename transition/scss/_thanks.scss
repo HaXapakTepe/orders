@@ -1,0 +1,39 @@
+.thanks {
+  @include fluid(margin-bottom, 80px, 120px);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include fluid(padding-top, 47px, 53px);
+    @include fluid(padding-bottom, 47px, 53px);
+    border-radius: 8px;
+    border: 1px solid #EDEDED;
+    background: #FFF;
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.05);
+  }
+
+  &__title {
+    &:first-of-type {
+      @include fluid(margin-bottom, 16px, 22px);
+    }
+
+    &:last-of-type {
+      @include fluid(margin-bottom, 32px, 27px);
+    }
+  }
+
+  &__img {
+    @include fluid(height, 250px, 332px);
+    transform: rotate(-1.11deg);
+    -o-object-fit: cover;
+    object-fit: cover;
+    @include fluid(margin-bottom, 32px, 38px);
+  }
+
+  .link {
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+}

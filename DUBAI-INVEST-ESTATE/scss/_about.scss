@@ -1,0 +1,42 @@
+.about {
+  position: relative;
+  @include fluid(margin-top, 60px, 120px);
+  @include fluid(margin-bottom, 60px, 120px);
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 264px;
+    right: 0;
+    top: -140px;
+    background-image: url('../images/about/bg-1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include fluid(gap, 25px, 75px);
+  }
+
+  &__border {
+    @include fluid(margin-bottom, 30px, 96px);
+  }
+
+  &__text {
+    @include fluid(min-height, 190px, 388px);
+    @include fluid(margin-bottom, 20px, 46px);
+  }
+
+  &__img {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .link {
+    margin-left: auto;
+  }
+}

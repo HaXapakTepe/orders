@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icons/icomoon.eot?4zy2bg');
+  src: url('../fonts/icons/icomoon.eot?4zy2bg#iefix') format('embedded-opentype'),
+    url('../fonts/icons/icomoon.ttf?4zy2bg') format('truetype'),
+    url('../fonts/icons/icomoon.woff?4zy2bg') format('woff'),
+    url('../fonts/icons/icomoon.svg?4zy2bg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bath:before {
+  content: '\e900';
+}
+.icon-bed:before {
+  content: '\e901';
+}
+.icon-building:before {
+  content: '\e902';
+}
+.icon-certificate:before {
+  content: '\e903';
+}
+.icon-heart:before {
+  content: '\e904';
+}
+.icon-home:before {
+  content: '\e905';
+}
+.icon-logo-white:before {
+  content: '\e906';
+}
+.icon-percent:before {
+  content: '\e907';
+}
+.icon-wallet:before {
+  content: '\e908';
+}
+.icon-fb:before {
+  content: '\ea90';
+}
+.icon-inst:before {
+  content: '\ea92';
+}
+.icon-wa:before {
+  content: '\ea93';
+}

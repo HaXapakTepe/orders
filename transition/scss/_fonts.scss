@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Ardeco";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Ardeco-Regular.woff") format("woff"),
+    url("../fonts/Ardeco-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/GothamPro-Regular.woff") format("woff"),
+    url("../fonts/GothamPro-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/GothamPro-Bold.woff") format("woff"),
+    url("../fonts/GothamPro-Bold.woff2") format("woff2");
+  font-display: swap;
+}

@@ -1,0 +1,43 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  @include fluid(margin-bottom, 21px, 33px);
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:last-child) {
+      position: relative;
+      padding-right: 14px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 45%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 6px;
+        height: 12px;
+        background-image: url("../images/icons/arrow-yellow.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &:last-child {
+      .breadcrumbs__link {
+        pointer-events: none;
+        color: #A3A3A3;
+      }
+    }
+  }
+
+  &__link {
+    color: #272727;
+    font-size: 12px;
+    letter-spacing: -0.24px;
+  }
+}

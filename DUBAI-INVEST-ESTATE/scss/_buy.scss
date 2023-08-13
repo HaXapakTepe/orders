@@ -1,0 +1,120 @@
+.buy {
+  position: relative;
+  @include fluid(margin-top, 60px, 120px);
+  @include fluid(margin-bottom, 60px, 120px);
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+
+  &::after {
+    width: 545px;
+    right: 0;
+    top: -140px;
+    background-image: url('../images/buy/bg-1.png');
+  }
+
+  &::before {
+    width: 188px;
+    left: 0;
+    bottom: -60px;
+    background-image: url('../images/buy/bg-2.png');
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @include fluid(row-gap, 25px, 70px);
+    @include fluid(column-gap, 15px, 30px);
+    @include fluid(margin-bottom, 20px, 70px);
+  }
+
+  &__item {
+    &-container {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-right: 84px solid transparent;
+        border-bottom: 84px solid #EDEDED;
+      }
+
+      .buy__item-logo {
+        position: absolute;
+        right: 9px;
+        bottom: 9px;
+        @include fluid(width, 75px, 90px);
+        @include fluid(height, 47px, 57px);
+      }
+
+      .buy__item-icon {
+        position: absolute;
+        left: 9px;
+        bottom: 9px;
+        z-index: 1;
+        color: #101820;
+        cursor: pointer;
+      }
+    }
+
+    &-img {
+      @include fluid(height, 170px, 252px);
+      -o-object-fit: cover;
+      object-fit: cover;
+      @include fluid(margin-bottom, 10px, 15px);
+    }
+
+    &-title {
+      @include fluid(font-size, 18px, 20px);
+      font-weight: 500;
+    }
+
+    &-text {
+      color: #A4A4A4;
+      @include fluid(font-size, 18px, 20px);
+      font-weight: 500;
+      @include fluid(margin-bottom, 15px, 20px);
+    }
+
+    &-box {
+      display: flex;
+      align-items: center;
+      @include fluid(gap, 15px, 28px);
+    }
+
+    &-block {
+      display: flex;
+      align-items: center;
+      @include fluid(gap, 10px, 15px);
+    }
+
+    &-icon {
+      font-size: 24px;
+      color: #A4A4A4;
+    }
+
+    &-svg {
+      width: 27px;
+      height: 27px;
+    }
+
+    &-num {
+      @include fluid(font-size, 14px, 16px);
+      font-weight: 500;
+    }
+  }
+
+  .link {
+    margin-left: auto;
+    @include fluid(gap, 15px, 28px);
+  }
+}

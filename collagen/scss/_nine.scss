@@ -1,0 +1,100 @@
+.nine {
+  &__wrapper {
+    background-color: #fff;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 20px, 60px);
+    @include fluid(padding-top, 20px, 80px);
+    @include fluid(padding-left, 20px, 80px);
+    @include fluid(padding-bottom, 20px, 80px);
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr .3fr;
+  }
+
+  &__item {
+    &-box {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      @include fluid(gap, 15px, 25px);
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 15%;
+        right: 5%;
+        width: 103%;
+        height: 20px;
+        background-image: radial-gradient(circle, black 10%, transparent 10%);
+        background-repeat: repeat;
+        background-size: 20px 35px;
+        pointer-events: none;
+        z-index: -2;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 19%;
+        right: 3%;
+        border: 10px solid transparent;
+        border-left: 10px solid black;
+      }
+    }
+
+    .nine__item-num {
+      color: #fff;
+    }
+
+    &-num {
+      position: relative;
+      @include fluid(padding, 10px, 15px);
+      @include fluid(font-size, 26px, 36px);
+      color: #fff;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        @include fluid(width, 40px, 50px);
+        @include fluid(height, 40px, 50px);
+        transform: translateY(-50%);
+        background-color: #000;
+        z-index: -1;
+      }
+    }
+
+    &-title {
+      @include fluid(font-size, 16px, 24px);
+      font-weight: 500;
+
+      &.nine__item-title--color {
+        color: rgb(165, 9, 9);
+        max-width: 80%;
+      }
+    }
+
+    &-text {
+      @include fluid(font-size, 14px, 16px);
+    }
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 15px, 25px);
+
+      .nine__item-title {
+        max-width: 80%;
+      }
+    }
+  }
+}

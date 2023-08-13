@@ -1,0 +1,86 @@
+.eight {
+  &__wrapper {
+    background-color: #fff;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include fluid(gap, 20px, 60px);
+    @include fluid(padding, 20px, 80px);
+    overflow: hidden;
+
+    &__title {
+      font-weight: 400;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 20px, 40px);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 10px;
+      height: 110%;
+      background-image: radial-gradient(circle, black 10%, transparent 10%);
+      background-repeat: repeat;
+      background-size: 10px 29px;
+      pointer-events: none;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      right: -5px;
+      border: 10px solid transparent;
+      border-bottom: 10px solid black;
+    }
+
+    &-text {
+      max-width: 90%;
+      @include fluid(font-size, 18px, 28px);
+      font-weight: 500;
+      color: #000;
+
+      &--pos {
+        position: absolute;
+
+        width: 0;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        top: 70%;
+        right: -15px;
+        transform: translateY(-50%) rotate(-90deg);
+        z-index: 1;
+      }
+
+      span {
+        display: block;
+        @include fluid(margin-top, 5px, 10px);
+        @include fluid(font-size, 16px, 20px);
+        line-height: 1.5;
+      }
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: 45%;
+    height: 100%;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,123 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+fieldset {
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button {
+  font: inherit;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  // font-family: "Gotham Pro", sans-serif;
+  font-family: "Gotham Pro";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #3a3a3a;
+  background-color: #f8f8f8;
+
+  &.no-scroll {
+    overflow-y: hidden;
+  }
+}
+
+.wrapper {
+  min-width: 320px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &--bg {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('../images/bg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -2;
+    }
+  }
+
+}
+
+.container {
+  @include container;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.logo {
+  &__img {
+    -o-object-fit: contain;
+    object-fit: contain;
+    height: 30px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #272727;
+  font-family: "Ardeco", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  font-size: 56px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #272727;
+}

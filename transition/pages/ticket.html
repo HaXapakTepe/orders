@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../images/favicon.svg" type="x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="../css/icons.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css?v=0.0001">
+  <title>Переходъ</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+
+    <header class="header header--alt">
+      <div class="container">
+        <nav class="header__nav">
+          <a class="logo" href="#">
+            <img class="logo__img" src="../images/logo.png" alt="">
+          </a>
+          <ul class="menu menu--alt">
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Об экскурсии
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Экскурсии
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                О проекте
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Школьникам
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Отзывы
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                FAQ
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <a class="link link-alt" href="#">
+            купить билет
+          </a>
+          <div class="burger burger--alt">
+            <div class="burger__line"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+
+    <main class="main">
+
+
+      <div class="order">
+        <div class="container">
+          <div class="order__wrapper">
+            <div class="order__wrapper-box">
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">
+                    Выбор экскурсии
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">
+                    Подтверждение
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">
+                    Оплата
+                  </a>
+                </li>
+              </ul>
+              <h4 class="order__title">
+                Выбрать экскурсию
+              </h4>
+            </div>
+            <div class="order__inner">
+              <div class="order__wrapper">
+                <p class="order__wrapper-title">
+                  Выберите данные
+                </p>
+                <div class="order__wrapper-column">
+                  <div class="order__wrapper order__wrapper--alt">
+                    <p class="order__wrapper-title">
+                      Выберите данные
+                    </p>
+                    <div class="order__wrapper-flex">
+                      <label class="order__label">
+                        Казанский Кремль 1911 г.
+                        <input class="order__input" type="radio" name="qwe">
+                      </label>
+                      <label class="order__label">
+                        3 Главные площади Казани 1910 г.
+                        <input class="order__input" type="radio" name="qwe">
+                      </label>
+                    </div>
+                  </div>
+                  <!-- <div class="order__wrapper order__wrapper--alt"> -->
+                  <div class="order__accordion" href="#">
+                    <p class="order__accordion-title">
+                      Выберите время
+                    </p>
+                  </div>
+                  <!-- </div> -->
+                  <div class="order__wrapper order__wrapper--alt">
+                    <p class="order__wrapper-title">
+                      Укажите количество билетов
+                    </p>
+                    <div class="order__wrapper-grid">
+                      <div class="order__wrapper-block">
+                        <div class="order__wrapper-box">
+                          <p class="order__wrapper-people">
+                            Взрослые
+                          </p>
+                          <p class="order__wrapper-age">
+                            от 14 лет
+                          </p>
+                        </div>
+                        <div class="count">
+                          <div class="count__minus">-</div>
+                          <div class="count__num">1</div>
+                          <div class="count__plus">+</div>
+                        </div>
+                      </div>
+                      <div class="order__wrapper-block">
+                        <div class="order__wrapper-box">
+                          <p class="order__wrapper-people">
+                            Дети
+                          </p>
+                          <p class="order__wrapper-age">
+                            до 14 лет
+                          </p>
+                        </div>
+                        <div class="count">
+                          <div class="count__minus">-</div>
+                          <div class="count__num">1</div>
+                          <div class="count__plus">+</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="order__wrapper order__wrapper--alt"> -->
+                  <div class="order__accordion" href="#">
+                    <p class="order__accordion-title">
+                      Выберите адрес
+                    </p>
+                  </div>
+                  <!-- </div> -->
+                </div>
+              </div>
+              <div class="order__wrapper">
+
+              </div>
+              <div class="order__inner-item">
+                <div class="order__wrapper">
+                  <p class="order__wrapper-title">
+                    Введите данные
+                  </p>
+                  <form class="form" action="">
+                    <fieldset class="form__fieldset">
+                      <label class="form__label">
+                        ФИО
+                        <input class="form__input" type="text" name="surname" placeholder="ФИО" required>
+                      </label>
+                      <label class="form__label">
+                        Телефон
+                        <input class="form__input" type="text" name="phone" placeholder="+7 (999) 999-99-99" required>
+                      </label>
+                      <label class="form__label">
+                        Электронная почта
+                        <input class="form__input" type="email" name="email" placeholder="mail@example.ru" required>
+                      </label>
+                      <p class="order__text">
+                        Указывая данные, вы даете согласие на обработку персональных данных и соглашаетесь c политикой
+                        конфиденциальности
+                      </p>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+              <div class="order__wrapper">
+                <div class="order__item">
+                  <p class="order__item-title">
+                    Данные билета
+                  </p>
+                  <div class="order__item-column">
+                    <div class="order__item-block">
+                      <p class="order__item-text">
+                        <span>
+                          Взрослый:
+                        </span>
+                        1 билет
+                        <span>
+                          Стоимость:
+                        </span>
+                        750₽
+                      </p>
+                      <p class="order__item-text">
+                        <span>
+                          Детский:
+                        </span>
+                        3 билета
+                        <span>
+                          Стоимость:
+                        </span>
+                        500₽
+                      </p>
+                      <p class="order__item-text">
+                        <span>
+                          Количество билетов:
+                        </span>
+                        4 билета
+                      </p>
+                      <p class="order__item-text">
+                        <span>
+                          Адрес:
+                        </span>
+                        Казанская улица, 2. Национальный музей РТ
+                      </p>
+                      <p class="order__item-text">
+                        <span>
+                          Экскурсия:
+                        </span>
+                        3 Главные площади Казани 1910 г.
+                      </p>
+                      <p class="order__item-text">
+                        <span>
+                          29 июля 10:30
+                        </span>
+                      </p>
+                      <p class="order__item-title">
+                        Итого: 3 000₽
+                      </p>
+                      <a class="link" href="#">
+                        Проверить заказ и купить
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+
+
+    <footer class="footer footer--alt">
+      <div class="container">
+        <h2 class="footer__title">
+          связаться с нами
+        </h2>
+        <div class="footer__inner">
+          <div class="footer__item">
+            <a class="footer__item-link" href="mailto:Info@perehod.net">
+              Info@perehod.net
+            </a>
+            <a class="footer__item-link" href="tel:+79256565434">
+              +7 (925) 656-54-34
+            </a>
+          </div>
+          <div class="footer__item">
+            <p class="footer__item-title">
+              Запись на экскурсии:
+            </p>
+            <a class="footer__item-link" href="tel:+79178635464">
+              +7 917 863-54-64
+            </a>
+          </div>
+          <div class="footer__item">
+            <p class="footer__item-title">
+              Время работы:
+            </p>
+            <p class="footer__item-subtitle">
+              Казанский Кремль
+              10:00&nbsp;-&nbsp;19:30
+            </p>
+          </div>
+          <div class="footer__item">
+            <p class="footer__item-title">
+              Социальные сети:
+            </p>
+            <div class="social social--footer social--alt">
+              <a class="social__icon icon-yt" href="#"></a>
+              <a class="social__icon icon-vk" href="#"></a>
+              <a class="social__icon icon-tg" href="#"></a>
+            </div>
+          </div>
+          <div class="footer__item">
+            <a class="link" href="#">
+              купить билет
+            </a>
+          </div>
+          <div class="footer__item">
+            <p class="footer__item-title">
+              Вопросы по групповым посещениям:
+            </p>
+            <a class="footer__item-link" href="tel:+79178635464">
+              +7 917 863-54-64
+            </a>
+          </div>
+          <div class="footer__item">
+            <p class="footer__item-subtitle">
+              Национальный музей РТ
+              10:00&nbsp;-&nbsp;20:00
+            </p>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bottom-text">
+            © ЦВТ 2022
+          </div>
+          <div class="footer__bottom-text">
+            ООО "Переход"
+          </div>
+          <div class="footer__bottom-text">
+            ОГРН: 1211600080207
+          </div>
+          <div class="footer__bottom-text">
+            ИНН/КПП: 1655466958/165501001
+          </div>
+          <a class="footer__bottom-link" href="#">
+            Политика конфиденциальности
+          </a>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/0.9.0/jquery.mask.min.js
+"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="../js/main.js?v=0.0001"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+.link {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  padding: 11px 17px 8px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 2;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #FDC300;
+  border: 1px solid transparent;
+  transition: background-color .38s ease-in-out,
+    color .38s ease-in-out,
+    border .38s ease-in-out;
+  text-transform: uppercase;
+  @include fluid(letter-spacing, .84px, 2.8px);
+  z-index: 1;
+
+  &:hover {
+    border-color: #FDC300;
+    color: #FDC300;
+    background-color: #fff;
+  }
+
+  &--alt {
+    color: #272727;
+  }
+}

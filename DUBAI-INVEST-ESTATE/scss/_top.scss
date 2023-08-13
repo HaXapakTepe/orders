@@ -1,0 +1,118 @@
+.top {
+  position: relative;
+  padding-top: 100px;
+  @include fluid(padding-top, 87px, 100px);
+
+  &__gradient {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 89%;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+    object-fit: cover;
+    z-index: 3;
+  }
+
+  &__pos {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+  }
+
+  &__bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    @include fluid(height, 120px, 320px);
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  &__bg {
+    &-slide {
+      opacity: 0;
+      @include fluid(height, 500px, 748px);
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: bottom;
+      object-position: bottom; // z-index: -1;
+
+      .swiper-slide-active {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__slide {
+    @include fluid(padding-top, 60px, 120px);
+    @include fluid(padding-bottom, 120px, 240px);
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 15px, 17px);
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    @include fluid(gap, 20px, 26px);
+    @include fluid(margin-bottom, 20px, 37px);
+
+    &-item {
+      display: flex;
+      align-items: center;
+      @include fluid(gap, 10px, 12px);
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      @include fluid(font-size, 16px, 18px);
+      font-weight: 500;
+    }
+
+    &-text {
+      font-size: 12px;
+    }
+  }
+
+  &__icon {
+    @include fluid(font-size, 32px, 39px);
+    color: #49586B;
+
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    @include fluid(gap, 20px, 29px);
+
+    &-icon {
+      width: 57px;
+      height: 57px;
+      cursor: pointer;
+
+      svg {
+        transition: transform .38s ease-in-out;
+      }
+
+      &:hover {
+        svg {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .link {
+    background-color: transparent;
+  }
+}

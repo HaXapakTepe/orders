@@ -1,0 +1,102 @@
+.why {
+  @include fluid(margin-top, 105px, 210px);
+  @include fluid(margin-bottom, 105px, 210px);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr .8fr .8fr;
+    @include fluid(gap, 35px, 70px);
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 25px, 56px);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 5px, 8px);
+
+    &-title {
+      position: relative;
+      @include fluid(font-size, 24px, 28px);
+      @include fluid(margin-bottom, 10px, 15px);
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 12%;
+        height: 80%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        background: rgba(106, 80, 255, .4);
+      }
+
+      span {
+        font-weight: 600;
+        color: #7e67ff;
+      }
+    }
+
+    &-circle {
+      @include fluid(margin-top, 60px, 120px);
+      @include fluid(width, 160px, 262px);
+      @include fluid(height, 160px, 262px);
+      @include fluid(margin-left, -25px, -50px);
+    }
+
+    &-text {
+      @include fluid(font-size, 12px, 14px);
+      line-height: 1.2;
+      color: #839bad;
+
+      &--accent {
+        @include fluid(font-size, 14px, 16px);
+        color: #fff;
+        line-height: 1.25;
+      }
+    }
+
+    &-subtitle {
+      font-weight: 500;
+      @include fluid(font-size, 17px, 19px);
+      line-height: 1.2;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .why {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    &__item {
+      &-title {
+        &:after {
+          content: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .why {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      &-circle {
+        display: none;
+      }
+    }
+  }
+}

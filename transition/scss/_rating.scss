@@ -1,0 +1,10 @@
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  &__icon {
+    color: #FDC300;
+    font-size: 17px;
+  }
+}

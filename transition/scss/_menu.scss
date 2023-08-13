@@ -1,0 +1,51 @@
+.menu {
+  display: flex;
+  align-items: center;
+  @include fluid(gap, 35px, 40px);
+  @include fluid(padding-left, 24px, 32px);
+  @include fluid(padding-right, 24px, 32px);
+  padding-top: 13px;
+  padding-bottom: 15px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.10);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
+  &--alt {
+    padding: 0;
+
+    .menu__link {
+      color: #272727;
+
+      &::after {
+        background-color: #272727;
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+    color: #FFF;
+    font-size: 12px;
+    letter-spacing: -0.24px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0%;
+      height: 2px;
+      border-radius: 25px;
+      background-color: #fff;
+      transition: width .38s ease-in-out;
+    }
+
+    &:hover {
+      &::after {
+        width: 105%;
+      }
+    }
+  }
+}

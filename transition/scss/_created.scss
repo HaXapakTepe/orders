@@ -1,0 +1,90 @@
+.created {
+  @include fluid(margin-top, 100px, 115px);
+  @include fluid(margin-bottom, 67px, 87px);
+  overflow-x: hidden;
+
+  &__title {
+    @include fluid(margin-bottom, 12px, 44px);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+    @include fluid(gap, 58px, 93px);
+  }
+
+  &__wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    &-span {
+      @include fluid(margin-top, 75px, 76px);
+    }
+
+    &-swiperRight {
+      overflow: visible;
+      @include fluid(width, 555px, 535px);
+      margin-left: unset;
+      pointer-events: none;
+    }
+
+    &-swiperLeft {
+      width: 351px;
+    }
+
+    &-span {
+      display: block;
+      margin-bottom: 48px;
+      color: #272727;
+      font-family: "Ardeco", sans-serif;
+      font-size: 24px;
+      line-height: 1.1;
+    }
+
+    &-text {
+      max-width: 351px;
+      margin-bottom: 177px;
+      line-height: 1.1;
+    }
+
+    &-img {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      height: 440px;
+      border-radius: 8px;
+      box-shadow: 4px 4px 30px 0px rgba(185, 171, 149, 0.40);
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+
+    .swiper-slide {
+      opacity: 0;
+      transition: opacity .2s ease-in-out;
+
+      &-active,
+      &-next {
+        opacity: 1;
+        transition: opacity .2s ease-in-out;
+      }
+
+      &-next {
+        +.swiper-slide {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__prev,
+  &__next {
+    top: unset;
+    bottom: 82px;
+  }
+
+  &__next {
+    right: auto;
+    left: 64px;
+  }
+}

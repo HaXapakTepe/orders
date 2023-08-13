@@ -1,0 +1,11 @@
+.map {
+  border-radius: 10px;
+  overflow-x: hidden;
+
+  &__item {
+    width: 100%;
+    @include fluid(height, 316px, 340px);
+    border-radius: 8px;
+    box-shadow: 4px 4px 30px 0px rgba(185, 171, 149, 0.40);
+  }
+}

@@ -1,0 +1,74 @@
+.project {
+  @include fluid(margin-top, 60px, 90px);
+  @include fluid(margin-bottom, 95px, 115px);
+
+  &__title {
+    margin-bottom: 44px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 21px;
+  }
+
+  &__item {
+    cursor: pointer;
+
+    &:hover {
+      .project__icon {
+        color: #fff;
+
+        &::after {
+          background-color: rgba(253, 195, 0, .4);
+        }
+      }
+    }
+  }
+
+  &__box {
+    position: relative;
+    margin-bottom: 24px;
+  }
+
+  &__img {
+    @include fluid(height, 292px, 400px);
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 4px 4px 30px 0px rgba(185, 171, 149, 0.4);
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include fluid(font-size, 26px, 44px);
+    color: #FDC300;
+    transition: transform .38s ease-in-out,
+      color .38s ease-in-out;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 47%;
+      transform: translate(-50%, -50%);
+      @include fluid(width, 60px, 100px);
+      @include fluid(height, 60px, 100px);
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.50);
+      z-index: -1;
+      transition: background-color .38s ease-in-out;
+    }
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+  }
+
+  &__hidden {
+    display: none;
+  }
+}

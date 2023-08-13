@@ -1,0 +1,96 @@
+.ten {
+  &__wrapper {
+    background-color: #fff;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 20px, 60px);
+    @include fluid(padding, 20px, 80px);
+    overflow-x: hidden;
+  }
+
+  &__item {
+    &-box {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        z-index: -2;
+      }
+
+      .ten__item-title,
+      .ten__item-text {
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+
+      &:nth-child(even) {
+        &::after {
+          background-color: #e7e7e7;
+        }
+      }
+
+      &:nth-child(n+1) {
+
+        .ten__item-title,
+        .ten__item-text {
+          &:nth-child(2) {
+            position: relative;
+
+            &::after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+              background-color: #e7e7e7;
+              z-index: -2;
+            }
+          }
+        }
+      }
+
+      &:nth-child(2n) {
+        .ten__item-text {
+          &:nth-child(2) {
+            &::after {
+              background-color: #d6d6d6;
+              z-index: -1;
+            }
+          }
+        }
+      }
+
+      .ten__item-title,
+      .ten__item-text {
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+
+    &-title {
+      @include fluid(padding, 10px, 15px);
+      font-weight: 600;
+    }
+
+    &-text {
+      @include fluid(padding, 10px, 15px);
+      font-weight: 500;
+    }
+  }
+}

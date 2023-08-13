@@ -1,0 +1,21 @@
+.header {
+  margin-top: 20px;
+
+  &--alt {
+    @include fluid(margin-bottom, 10px, 20px);
+
+    .header__nav {
+      padding: 16px 30px;
+      border-radius: 8px;
+      border: 1px solid #EDEDED;
+      background: #FFF;
+      box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

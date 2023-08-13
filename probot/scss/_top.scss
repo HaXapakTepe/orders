@@ -1,0 +1,37 @@
+.top {
+  @include fluid(margin-top, 85px, 170px);
+  @include fluid(margin-bottom, 105px, 210px);
+
+  &__title {
+    @include fluid(margin-bottom, 15px, 30px);
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include fluid(gap, 10px, 20px);
+  }
+}
+
+@media (max-width: 992px) {
+  .top {
+    margin-bottom: 50px;
+
+    &__title {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__box {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .top {
+    margin-bottom: 30px;
+  }
+}

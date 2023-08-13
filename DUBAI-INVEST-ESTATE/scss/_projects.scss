@@ -1,0 +1,94 @@
+.projects {
+  position: relative;
+  @include fluid(padding-top, 60px, 250px);
+  @include fluid(margin-bottom, 60px, 120px);
+  z-index: 1;
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+
+  &::after {
+    @include fluid(width, 440px, 714px);
+    left: 0;
+    @include fluid(top, -60px, -113px);
+    background-image: url('../images/projects/bg-1.png');
+  }
+
+  &::before {
+    @include fluid(width, 425px, 721px);
+    right: 0;
+    @include fluid(top, 40px, 70px);
+    background-image: url('../images/projects/bg-2.png');
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include fluid(row-gap, 20px, 45px);
+    @include fluid(column-gap, 15px, 25px);
+    @include fluid(margin-bottom, 20px, 70px);
+  }
+
+  &__item {
+    &-img {
+      width: 100%;
+      @include fluid(height, 205px, 336px);
+      -o-object-fit: cover;
+      object-fit: cover;
+      transition: transform .38s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05)
+      }
+    }
+
+    &-link {
+      position: relative;
+      @include fluid(font-size, 22px, 28px);
+      font-weight: 500;
+      color: #101820;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -2px;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 1px;
+        background-color: #101820;
+        border-radius: 25px;
+        transition: width .38s ease-in-out;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    &-text {
+      color: #A4A4A4;
+      @include fluid(font-size, 20px, 24px);
+      font-weight: 500;
+    }
+
+    &-box {
+      overflow: hidden;
+      @include fluid(margin-bottom, 15px, 29px);
+    }
+  }
+
+  .link {
+    margin-left: auto;
+    @include fluid(gap, 15px, 28px);
+  }
+}

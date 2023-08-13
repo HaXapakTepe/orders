@@ -1,0 +1,38 @@
+.social {
+  &--footer {
+    display: flex;
+    align-items: center;
+    @include fluid(gap, 32px, 30px);
+    margin-left: 6px;
+
+    .social__icon {
+      position: relative;
+      font-size: 22px;
+      color: #272727;
+      z-index: 1;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 50%;
+        z-index: -1;
+      }
+    }
+  }
+
+  &--alt {
+    .social__icon {
+      color: #fff;
+
+      &::after {
+        background-color: #272727;
+      }
+    }
+  }
+}

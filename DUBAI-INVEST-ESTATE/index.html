@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,viewport-fit=cover,maximum-scale=1,user-scalable=0"> -->
+  <link rel="shortcut icon" href="./images/favicon.svg" type="x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/icons.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css?v=0.0001">
+  <title>DUBAI INVEST ESTATE</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <nav class="header__inner">
+          <a class="logo" href="#">
+            <img class="log__img" src="./images/logo.svg" alt="">
+          </a>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Off Plan Properties
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Real Estate Catalog
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                About the Market
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                About the Company
+              </a>
+            </li>
+          </ul>
+          <a class="header__icon icon-heart" href="#"></a>
+          <div class="header__item">
+            <a class="header__item-icon" href="#">
+              <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1 22C1.88149 20.1 2.68073 18.3396 3.51876 16.5928C3.61638 16.4247 3.66765 16.2351 3.66765 16.0423C3.66765 15.8495 3.61638 15.6599 3.51876 15.4918C1.76665 12.0237 1.91097 8.60359 4.1209 5.38629C6.33083 2.16898 9.5402 0.770615 13.4852 1.03046C17.9128 1.31885 21.9292 5.0213 22.5685 9.29151C23.4112 14.915 19.7999 19.7875 14.0051 20.7293C11.9985 21.0553 9.93683 20.7494 8.1233 19.8566C7.92622 19.7472 7.70502 19.6847 7.47804 19.6746C7.25105 19.6644 7.02483 19.7067 6.81814 19.7981C4.92945 20.5461 3.02525 21.2385 1 22ZM2.75987 20.3763C4.19695 19.8326 5.42762 19.412 6.61484 18.8984C7.26664 18.616 7.77878 18.6565 8.4073 18.9825C10.6948 20.166 13.1267 20.2877 15.5353 19.4601C18.7943 18.3396 20.9002 16.0626 21.5877 12.7882C22.3218 9.2855 21.2354 6.25444 18.3846 3.91882C14.2611 0.537801 7.80981 1.46755 4.86427 5.85792C2.8654 8.8379 2.74591 11.9591 4.37076 15.1118C4.73081 15.8072 4.71374 16.3299 4.37076 16.9818C3.82294 18.0182 3.35736 19.0906 2.75366 20.3763H2.75987Z"
+                  fill="#101820" stroke="#101820" stroke-width="0.5" stroke-miterlimit="10" />
+                <path
+                  d="M8.88372 6.55038C9.58674 6.51733 10.0927 6.77117 10.3736 7.34945C10.6674 7.95926 10.9343 8.58009 11.1744 9.21193C11.2543 9.399 11.2811 9.60339 11.2519 9.80386C11.2227 10.0043 11.1386 10.1936 11.0083 10.352C10.6746 10.7425 10.7615 11.0324 11.0673 11.3853C11.3375 11.6855 11.6462 11.951 11.986 12.1754C12.4671 12.5058 12.9172 12.7447 13.285 12.0342C13.3941 11.8935 13.5452 11.7887 13.7179 11.7338C14.3542 11.4619 16.6666 12.3872 17.0825 13.0646C17.4984 13.742 17.1523 14.9766 16.381 15.6255C15.4949 16.3765 14.5001 16.5102 13.3517 16.3149C9.93747 15.7322 7.00125 12.4337 6.50308 10.0576C6.24081 8.80038 6.69862 7.75348 7.71358 6.93939C8.06276 6.65852 8.46005 6.4918 8.88372 6.55038ZM7.34578 9.45376C7.34618 9.628 7.35757 9.80206 7.37991 9.97495C7.40867 10.1476 7.46085 10.3157 7.5351 10.4751C8.8263 13.0916 10.7755 14.9526 13.8204 15.5129C14.1881 15.5954 14.5719 15.5824 14.9328 15.475C15.2937 15.3676 15.6188 15.1698 15.8751 14.9015C16.6169 14.1415 16.5052 13.5032 15.5647 13.0526L15.214 12.8858C14.1835 12.3887 14.1649 12.3752 13.4386 13.2328C13.1282 13.5918 12.8659 13.6263 12.4438 13.4416C11.3451 12.9625 10.535 12.1904 9.86919 11.2442C9.65037 10.9332 9.61157 10.6599 9.9204 10.3865C10.386 9.97195 10.4077 9.4853 10.1377 8.9641C10.0135 8.71928 9.92661 8.45492 9.81953 8.20108C9.42844 7.28185 8.56403 7.16019 7.93085 7.94424C7.57546 8.37982 7.31163 8.86648 7.34578 9.45376Z"
+                  fill="#101820" stroke="#101820" stroke-width="0.5" stroke-miterlimit="10" />
+              </svg>
+            </a>
+            <a class="header__item-icon" href="#">
+              <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.75985 16.5228C6.75985 15.5979 6.70811 14.6697 6.77554 13.7482C6.83042 13.0104 6.54503 12.7948 5.9225 12.6886C4.58335 12.4595 3.25674 12.1344 1.92543 11.8699C1.19 11.7234 0.619213 11.3645 0.542377 10.5138C0.46554 9.66308 1.0128 9.28405 1.6667 9.01283C7.8617 6.40731 14.0551 3.79787 20.247 1.1845C20.7958 0.952025 21.3149 0.879581 21.7853 1.326C22.2557 1.77242 22.2918 2.31486 22.1569 2.94153C20.8868 8.85953 19.6355 14.7826 18.3622 20.7006C18.0768 22.028 17.1077 22.397 16.1433 21.5345C14.9218 20.4378 13.7269 19.3057 12.554 18.1518C12.0725 17.675 11.7464 17.5655 11.2603 18.1754C10.5985 19.0042 9.83802 19.7404 9.11356 20.5085C8.66038 20.987 8.13821 21.2952 7.49216 20.9903C6.8806 20.7039 6.73163 20.148 6.75202 19.4742C6.78181 18.487 6.75985 17.5049 6.75985 16.5228ZM18.3089 3.06282C18.1548 3.08809 18.0028 3.12583 17.8541 3.1757C12.5571 5.39824 7.26113 7.62304 1.96621 9.85008C1.69963 9.96126 1.39072 10.0505 1.41737 10.4548C1.44403 10.8591 1.77176 10.9013 2.04461 10.9602C3.50137 11.2769 4.95969 11.5751 6.41488 11.8952C6.62957 11.9451 6.85203 11.9418 7.06534 11.8855C7.27865 11.8291 7.47718 11.7212 7.64583 11.57C9.00693 10.4852 10.3994 9.4424 11.7715 8.36931C13.9867 6.64316 16.1992 4.91196 18.4092 3.1757C18.4374 3.13527 18.4986 3.07462 18.4892 3.05946C18.4374 2.97018 18.37 3.00218 18.3089 3.06282ZM21.3651 2.14135C21.2422 2.1927 21.1232 2.25408 21.0091 2.32497C16.7753 5.59983 12.5524 8.89491 8.30757 12.1428C7.71797 12.5926 8.09901 12.7745 8.3797 13.039C11.0455 15.5558 13.7112 18.0698 16.377 20.581C17.1736 21.3289 17.3617 21.2548 17.6079 20.1059C18.6868 15.0909 19.7766 10.0775 20.8288 5.05571C21.0264 4.12244 21.3478 3.20265 21.3651 2.14135ZM7.56586 13.4854C7.56586 15.6468 7.56586 17.5992 7.56586 19.55C7.56586 19.7791 7.5784 20.0133 7.81362 20.116C8.04883 20.2188 8.26366 20.116 8.44085 19.9172C9.25156 19.0429 10.0544 18.1602 10.8824 17.3061C11.1787 17.0012 11.105 16.8395 10.8306 16.5868C9.78314 15.6181 8.75917 14.6259 7.56429 13.4854H7.56586Z"
+                  fill="#101820" stroke="#101820" stroke-width="0.5" stroke-miterlimit="10" />
+              </svg>
+            </a>
+          </div>
+          <div class="header__lang">
+            <p class="header__lang-now">
+              Eng
+            </p>
+            <div class="header__lang-box">
+              <button class="header__lang-btn">
+                Rus
+              </button>
+            </div>
+          </div>
+          <div class="burger">
+            <div class="burger__line"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+
+
+      <section class="top">
+        <img class="top__gradient" src="./images/top/gradient.png" alt="">
+        <img class="top__bottom" src="./images/top/bottom.png" alt="">
+        <div class="top__bg swiper">
+          <div class="top__bg-wrapper swiper-wrapper">
+            <img class="top__bg-slide swiper-slide" src="./images/top/bg.jpg" alt="">
+            <img class="top__bg-slide swiper-slide" src="./images/feedback/bg.png" alt="">
+            <img class="top__bg-slide swiper-slide" src="./images/top/bg.jpg" alt="">
+          </div>
+        </div>
+        <div class="top__pos">
+          <div class="container">
+            <div class="top__swiper swiper">
+              <div class="top__wrapper swiper-wrapper">
+                <div class="top__slide swiper-slide">
+                  <h2 class="top__title">
+                    AI Habtoor Tower
+                  </h2>
+                  <div class="top__box">
+                    <div class="top__box-item">
+                      <div class="top__icon icon-wallet"></div>
+                      <div class="top__column">
+                        <p class="top__column-title">
+                          USD 900k
+                        </p>
+                        <p class="top__column-text">
+                          Starting Price
+                        </p>
+                      </div>
+                    </div>
+                    <div class="top__box-item">
+                      <div class="top__icon icon-percent"></div>
+                      <div class="top__column">
+                        <p class="top__column-title">
+                          60/40%
+                        </p>
+                        <p class="top__column-text">
+                          Payment Plan
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="top__item">
+                    <a class="link" href="#">
+                      Discover More
+                      <svg viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L4 4L2.5 5.5L1 7" stroke="#49586B" />
+                      </svg>
+                    </a>
+                    <div class="top__item-icon">
+                      <svg viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="28.5" cy="28.5" r="28.5" fill="#231F20" fill-opacity="0.08" />
+                        <circle cx="28.5" cy="28.5" r="23.5" fill="white" fill-opacity="0.8" />
+                        <path
+                          d="M34.75 27.201C35.75 27.7783 35.75 29.2217 34.75 29.799L26.5 34.5622C25.5 35.1395 24.25 34.4178 24.25 33.2631L24.25 23.7369C24.25 22.5822 25.5 21.8605 26.5 22.4378L34.75 27.201Z"
+                          stroke="#49586B" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="top__slide swiper-slide">
+                  <h2 class="top__title">
+                    AI Habtoor Tower
+                  </h2>
+                  <div class="top__box">
+                    <div class="top__box-item">
+                      <div class="top__icon icon-wallet"></div>
+                      <div class="top__column">
+                        <p class="top__column-title">
+                          USD 900k
+                        </p>
+                        <p class="top__column-text">
+                          Starting Price
+                        </p>
+                      </div>
+                    </div>
+                    <div class="top__box-item">
+                      <div class="top__icon icon-percent"></div>
+                      <div class="top__column">
+                        <p class="top__column-title">
+                          60/40%
+                        </p>
+                        <p class="top__column-text">
+                          Payment Plan
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="top__item">
+                    <a class="link" href="#">
+                      Discover More
+                      <svg viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L4 4L2.5 5.5L1 7" stroke="#49586B" />
+                      </svg>
+                    </a>
+                    <div class="top__item-icon">
+                      <svg viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="28.5" cy="28.5" r="28.5" fill="#231F20" fill-opacity="0.08" />
+                        <circle cx="28.5" cy="28.5" r="23.5" fill="white" fill-opacity="0.8" />
+                        <path
+                          d="M34.75 27.201C35.75 27.7783 35.75 29.2217 34.75 29.799L26.5 34.5622C25.5 35.1395 24.25 34.4178 24.25 33.2631L24.25 23.7369C24.25 22.5822 25.5 21.8605 26.5 22.4378L34.75 27.201Z"
+                          stroke="#49586B" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="top__slide swiper-slide">
+                  <h2 class="top__title">
+                    AI Habtoor Tower
+                  </h2>
+                  <div class="top__box">
+                    <div class="top__box-item">
+                      <div class="top__icon icon-wallet"></div>
+                      <div class="top__column">
+                        <p class="top__column-title">
+                          USD 900k
+                        </p>
+                        <p class="top__column-text">
+                          Starting Price
+                        </p>
+                      </div>
+                    </div>
+                    <div class="top__box-item">
+                      <div class="top__icon icon-percent"></div>
+                      <div class="top__column">
+                        <p class="top__column-title">
+                          60/40%
+                        </p>
+                        <p class="top__column-text">
+                          Payment Plan
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="top__item">
+                    <a class="link" href="#">
+                      Discover More
+                      <svg viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L4 4L2.5 5.5L1 7" stroke="#49586B" />
+                      </svg>
+                    </a>
+                    <div class="top__item-icon">
+                      <svg viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="28.5" cy="28.5" r="28.5" fill="#231F20" fill-opacity="0.08" />
+                        <circle cx="28.5" cy="28.5" r="23.5" fill="white" fill-opacity="0.8" />
+                        <path
+                          d="M34.75 27.201C35.75 27.7783 35.75 29.2217 34.75 29.799L26.5 34.5622C25.5 35.1395 24.25 34.4178 24.25 33.2631L24.25 23.7369C24.25 22.5822 25.5 21.8605 26.5 22.4378L34.75 27.201Z"
+                          stroke="#49586B" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="projects">
+        <div class="container">
+          <div class="projects__border border">
+            <h3 class="projects__title">
+              NEW PROJECTS
+            </h3>
+          </div>
+          <div class="projects__inner">
+            <div class="projects__item">
+              <div class="projects__item-box">
+                <img class="projects__item-img" src="./images/projects/1.png" alt="">
+              </div>
+              <a class="projects__item-link" href="#">
+                Harbour Light by Damac
+              </a>
+              <p class="projects__item-text">
+                from $713.000
+              </p>
+            </div>
+            <div class="projects__item">
+              <div class="projects__item-box">
+                <img class="projects__item-img" src="./images/projects/1.png" alt="">
+              </div>
+              <a class="projects__item-link" href="#">
+                Harbour Light by Damac
+              </a>
+              <p class="projects__item-text">
+                from $713.000
+              </p>
+            </div>
+            <div class="projects__item">
+              <div class="projects__item-box">
+                <img class="projects__item-img" src="./images/projects/1.png" alt="">
+              </div>
+              <a class="projects__item-link" href="#">
+                Harbour Light by Damac
+              </a>
+              <p class="projects__item-text">
+                from $713.000
+              </p>
+            </div>
+            <div class="projects__item">
+              <div class="projects__item-box">
+                <img class="projects__item-img" src="./images/projects/1.png" alt="">
+              </div>
+              <a class="projects__item-link" href="#">
+                Harbour Light by Damac
+              </a>
+              <p class="projects__item-text">
+                from $713.000
+              </p>
+            </div>
+          </div>
+          <a class="link" href="#">
+            See More
+            <svg viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L4 4L2.5 5.5L1 7" stroke="#49586B" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+
+      <section class="partners">
+        <div class="container">
+          <div class="partners__border border">
+            <h3 class="partners__title">
+              OUR PARTNERS
+            </h3>
+          </div>
+          <div class="partners__inner">
+            <div class="partners__swiper swiper">
+              <div class="partners__wrapper swiper-wrapper">
+                <img class="partners__slide swiper-slide" src="./images/partners/1.png" alt="">
+                <img class="partners__slide swiper-slide" src="./images/partners/2.png" alt="">
+                <img class="partners__slide swiper-slide" src="./images/partners/3.png" alt="">
+                <img class="partners__slide swiper-slide" src="./images/partners/1.png" alt="">
+                <img class="partners__slide swiper-slide" src="./images/partners/2.png" alt="">
+                <img class="partners__slide swiper-slide" src="./images/partners/3.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="buy">
+        <div class="container">
+          <div class="buy__border border">
+            <h3 class="buy__title">
+              BUY PROPERTIES
+            </h3>
+          </div>
+          <div class="buy__inner">
+            <div class="buy__item">
+              <div class="buy__item-container">
+                <img class="buy__item-img" src="./images/buy/1.png" alt="">
+                <div class="buy__item-icon icon-heart"></div>
+                <img class="buy__item-logo" src="./images/icons/logo-white.svg" alt="">
+              </div>
+              <p class="buy__item-title">
+                3BR Apartment in AIRE Dubai,
+                Al Wasl (MS-2190)
+              </p>
+              <p class="buy__item-text">
+                USD 500.000
+              </p>
+              <div class="buy__item-box">
+                <div class="buy__item-block">
+                  <div class="buy__item-icon icon-bed"></div>
+                  <div class="buy__item-num">3</div>
+                </div>
+                <div class="buy__item-block">
+                  <div class="buy__item-icon icon-bath"></div>
+                  <div class="buy__item-num">2</div>
+                </div>
+                <div class="buy__item-block">
+                  <div class="buy__item-svg">
+                    <svg viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_98_836)">
+                        <path
+                          d="M19.8819 25.2897H19.8828C20.3862 25.2888 20.8678 25.0862 21.222 24.7279C21.576 24.3699 21.774 23.8856 21.774 23.3816V6.18001C21.774 5.67608 21.576 5.19182 21.222 4.83374C20.8678 4.47549 20.3862 4.27287 19.8828 4.27197H19.8819L2.84236 4.27197L2.84146 4.27197C2.33794 4.27287 1.85624 4.47528 1.50167 4.83327C1.14726 5.1911 0.948635 5.67514 0.94775 6.17913V6.18001L0.947749 23.3816L0.94775 23.3825C0.948635 23.8865 1.14726 24.3706 1.50167 24.7284C1.85625 25.0864 2.33796 25.2888 2.84146 25.2897H2.84236H19.8819ZM21.3861 4.65347L21.7352 4.308L21.3861 4.65347C21.7862 5.05782 22.012 5.60685 22.0125 6.18047V23.3812C22.012 23.9548 21.7862 24.5039 21.3861 24.9082C20.9861 25.3124 20.4447 25.5391 19.8809 25.5402H2.84283C2.27869 25.5396 1.73682 25.3132 1.33644 24.9089C0.935935 24.5046 0.709818 23.9553 0.709229 23.3814V6.18026C0.709818 5.60638 0.935933 5.05712 1.33644 4.65275C1.73677 4.24855 2.27855 4.02208 2.84259 4.02148H19.8814C20.445 4.02267 20.9862 4.24938 21.3861 4.65347Z"
+                          fill="#A4A4A4" stroke="#A4A4A4" />
+                        <path
+                          d="M23.9702 0.750482H23.9689H16.191C16.1609 0.750482 16.1311 0.738451 16.1084 0.715517C16.0855 0.692419 16.0718 0.660039 16.0718 0.625241C16.0718 0.590443 16.0855 0.558063 16.1084 0.534965C16.1311 0.512031 16.1609 0.5 16.191 0.5H23.9708C24.4205 0.501161 24.8524 0.682254 25.1715 1.00514C25.4908 1.32833 25.6711 1.76726 25.6711 2.22586V9.51118C25.6711 9.54595 25.6573 9.5783 25.6344 9.60142C25.6117 9.6244 25.5818 9.63642 25.5518 9.63642C25.5217 9.63642 25.4919 9.6244 25.4691 9.60142C25.4462 9.5783 25.4325 9.54595 25.4325 9.51118V2.22586C25.4325 1.83679 25.2798 1.46262 25.0062 1.18567C24.7324 0.908563 24.3599 0.751493 23.9702 0.750482Z"
+                          fill="#A4A4A4" stroke="#A4A4A4" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_98_836">
+                          <rect width="25.9644" height="26.04" fill="white" transform="translate(0.209229)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="buy__item-num">1926 SQFT</div>
+                </div>
+              </div>
+            </div>
+            <div class="buy__item">
+              <div class="buy__item-container">
+                <img class="buy__item-img" src="./images/buy/1.png" alt="">
+                <div class="buy__item-icon icon-heart"></div>
+                <img class="buy__item-logo" src="./images/icons/logo-white.svg" alt="">
+              </div>
+              <p class="buy__item-title">
+                3BR Apartment in AIRE Dubai,
+                Al Wasl (MS-2190)
+              </p>
+              <p class="buy__item-text">
+                USD 500.000
+              </p>
+              <div class="buy__item-box">
+                <div class="buy__item-block">
+                  <div class="buy__item-icon icon-bed"></div>
+                  <div class="buy__item-num">3</div>
+                </div>
+                <div class="buy__item-block">
+                  <div class="buy__item-icon icon-bath"></div>
+                  <div class="buy__item-num">2</div>
+                </div>
+                <div class="buy__item-block">
+                  <div class="buy__item-svg">
+                    <svg viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_98_836)">
+                        <path
+                          d="M19.8819 25.2897H19.8828C20.3862 25.2888 20.8678 25.0862 21.222 24.7279C21.576 24.3699 21.774 23.8856 21.774 23.3816V6.18001C21.774 5.67608 21.576 5.19182 21.222 4.83374C20.8678 4.47549 20.3862 4.27287 19.8828 4.27197H19.8819L2.84236 4.27197L2.84146 4.27197C2.33794 4.27287 1.85624 4.47528 1.50167 4.83327C1.14726 5.1911 0.948635 5.67514 0.94775 6.17913V6.18001L0.947749 23.3816L0.94775 23.3825C0.948635 23.8865 1.14726 24.3706 1.50167 24.7284C1.85625 25.0864 2.33796 25.2888 2.84146 25.2897H2.84236H19.8819ZM21.3861 4.65347L21.7352 4.308L21.3861 4.65347C21.7862 5.05782 22.012 5.60685 22.0125 6.18047V23.3812C22.012 23.9548 21.7862 24.5039 21.3861 24.9082C20.9861 25.3124 20.4447 25.5391 19.8809 25.5402H2.84283C2.27869 25.5396 1.73682 25.3132 1.33644 24.9089C0.935935 24.5046 0.709818 23.9553 0.709229 23.3814V6.18026C0.709818 5.60638 0.935933 5.05712 1.33644 4.65275C1.73677 4.24855 2.27855 4.02208 2.84259 4.02148H19.8814C20.445 4.02267 20.9862 4.24938 21.3861 4.65347Z"
+                          fill="#A4A4A4" stroke="#A4A4A4" />
+                        <path
+                          d="M23.9702 0.750482H23.9689H16.191C16.1609 0.750482 16.1311 0.738451 16.1084 0.715517C16.0855 0.692419 16.0718 0.660039 16.0718 0.625241C16.0718 0.590443 16.0855 0.558063 16.1084 0.534965C16.1311 0.512031 16.1609 0.5 16.191 0.5H23.9708C24.4205 0.501161 24.8524 0.682254 25.1715 1.00514C25.4908 1.32833 25.6711 1.76726 25.6711 2.22586V9.51118C25.6711 9.54595 25.6573 9.5783 25.6344 9.60142C25.6117 9.6244 25.5818 9.63642 25.5518 9.63642C25.5217 9.63642 25.4919 9.6244 25.4691 9.60142C25.4462 9.5783 25.4325 9.54595 25.4325 9.51118V2.22586C25.4325 1.83679 25.2798 1.46262 25.0062 1.18567C24.7324 0.908563 24.3599 0.751493 23.9702 0.750482Z"
+                          fill="#A4A4A4" stroke="#A4A4A4" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_98_836">
+                          <rect width="25.9644" height="26.04" fill="white" transform="translate(0.209229)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="buy__item-num">1926 SQFT</div>
+                </div>
+              </div>
+            </div>
+            <div class="buy__item">
+              <div class="buy__item-container">
+                <img class="buy__item-img" src="./images/buy/1.png" alt="">
+                <div class="buy__item-icon icon-heart"></div>
+                <img class="buy__item-logo" src="./images/icons/logo-white.svg" alt="">
+              </div>
+              <p class="buy__item-title">
+                3BR Apartment in AIRE Dubai,
+                Al Wasl (MS-2190)
+              </p>
+              <p class="buy__item-text">
+                USD 500.000
+              </p>
+              <div class="buy__item-box">
+                <div class="buy__item-block">
+                  <div class="buy__item-icon icon-bed"></div>
+                  <div class="buy__item-num">3</div>
+                </div>
+                <div class="buy__item-block">
+                  <div class="buy__item-icon icon-bath"></div>
+                  <div class="buy__item-num">2</div>
+                </div>
+                <div class="buy__item-block">
+                  <div class="buy__item-svg">
+                    <svg viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_98_836)">
+                        <path
+                          d="M19.8819 25.2897H19.8828C20.3862 25.2888 20.8678 25.0862 21.222 24.7279C21.576 24.3699 21.774 23.8856 21.774 23.3816V6.18001C21.774 5.67608 21.576 5.19182 21.222 4.83374C20.8678 4.47549 20.3862 4.27287 19.8828 4.27197H19.8819L2.84236 4.27197L2.84146 4.27197C2.33794 4.27287 1.85624 4.47528 1.50167 4.83327C1.14726 5.1911 0.948635 5.67514 0.94775 6.17913V6.18001L0.947749 23.3816L0.94775 23.3825C0.948635 23.8865 1.14726 24.3706 1.50167 24.7284C1.85625 25.0864 2.33796 25.2888 2.84146 25.2897H2.84236H19.8819ZM21.3861 4.65347L21.7352 4.308L21.3861 4.65347C21.7862 5.05782 22.012 5.60685 22.0125 6.18047V23.3812C22.012 23.9548 21.7862 24.5039 21.3861 24.9082C20.9861 25.3124 20.4447 25.5391 19.8809 25.5402H2.84283C2.27869 25.5396 1.73682 25.3132 1.33644 24.9089C0.935935 24.5046 0.709818 23.9553 0.709229 23.3814V6.18026C0.709818 5.60638 0.935933 5.05712 1.33644 4.65275C1.73677 4.24855 2.27855 4.02208 2.84259 4.02148H19.8814C20.445 4.02267 20.9862 4.24938 21.3861 4.65347Z"
+                          fill="#A4A4A4" stroke="#A4A4A4" />
+                        <path
+                          d="M23.9702 0.750482H23.9689H16.191C16.1609 0.750482 16.1311 0.738451 16.1084 0.715517C16.0855 0.692419 16.0718 0.660039 16.0718 0.625241C16.0718 0.590443 16.0855 0.558063 16.1084 0.534965C16.1311 0.512031 16.1609 0.5 16.191 0.5H23.9708C24.4205 0.501161 24.8524 0.682254 25.1715 1.00514C25.4908 1.32833 25.6711 1.76726 25.6711 2.22586V9.51118C25.6711 9.54595 25.6573 9.5783 25.6344 9.60142C25.6117 9.6244 25.5818 9.63642 25.5518 9.63642C25.5217 9.63642 25.4919 9.6244 25.4691 9.60142C25.4462 9.5783 25.4325 9.54595 25.4325 9.51118V2.22586C25.4325 1.83679 25.2798 1.46262 25.0062 1.18567C24.7324 0.908563 24.3599 0.751493 23.9702 0.750482Z"
+                          fill="#A4A4A4" stroke="#A4A4A4" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_98_836">
+                          <rect width="25.9644" height="26.04" fill="white" transform="translate(0.209229)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="buy__item-num">1926 SQFT</div>
+                </div>
+              </div>
+            </div>
+            <div class="buy__item">
+              <div class="buy__item-container">
+                <img class="buy__item-img" src="./images/buy/1.png" alt="">
+                <div class="buy__item-icon icon-heart"></div>
+                <img class="buy__item-logo" src="./images/icons/logo-white.svg" alt="">
+              </div>
+              <p class="buy__item-title">
+                3BR Apartment in AIRE Dubai,
+                Al Wasl (MS-2190)
+              </p>
+              <p class="buy__item-text">
+                USD 500.000
+              </p>
+              <div class="buy__item-box">
+                <div class="buy__item-block">
+                  <div class="buy__item-icon icon-bed"></div>
+                  <div class="buy__item-num">3</div>
+                </div>
+                <div class="buy__item-block">
+                  <div class="buy__item-icon icon-bath"></div>
+                  <div class="buy__item-num">2</div>
+                </div>
+                <div class="buy__item-block">
+                  <div class="buy__item-svg">
+                    <svg viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_98_836)">
+                        <path
+                          d="M19.8819 25.2897H19.8828C20.3862 25.2888 20.8678 25.0862 21.222 24.7279C21.576 24.3699 21.774 23.8856 21.774 23.3816V6.18001C21.774 5.67608 21.576 5.19182 21.222 4.83374C20.8678 4.47549 20.3862 4.27287 19.8828 4.27197H19.8819L2.84236 4.27197L2.84146 4.27197C2.33794 4.27287 1.85624 4.47528 1.50167 4.83327C1.14726 5.1911 0.948635 5.67514 0.94775 6.17913V6.18001L0.947749 23.3816L0.94775 23.3825C0.948635 23.8865 1.14726 24.3706 1.50167 24.7284C1.85625 25.0864 2.33796 25.2888 2.84146 25.2897H2.84236H19.8819ZM21.3861 4.65347L21.7352 4.308L21.3861 4.65347C21.7862 5.05782 22.012 5.60685 22.0125 6.18047V23.3812C22.012 23.9548 21.7862 24.5039 21.3861 24.9082C20.9861 25.3124 20.4447 25.5391 19.8809 25.5402H2.84283C2.27869 25.5396 1.73682 25.3132 1.33644 24.9089C0.935935 24.5046 0.709818 23.9553 0.709229 23.3814V6.18026C0.709818 5.60638 0.935933 5.05712 1.33644 4.65275C1.73677 4.24855 2.27855 4.02208 2.84259 4.02148H19.8814C20.445 4.02267 20.9862 4.24938 21.3861 4.65347Z"
+                          fill="#A4A4A4" stroke="#A4A4A4" />
+                        <path
+                          d="M23.9702 0.750482H23.9689H16.191C16.1609 0.750482 16.1311 0.738451 16.1084 0.715517C16.0855 0.692419 16.0718 0.660039 16.0718 0.625241C16.0718 0.590443 16.0855 0.558063 16.1084 0.534965C16.1311 0.512031 16.1609 0.5 16.191 0.5H23.9708C24.4205 0.501161 24.8524 0.682254 25.1715 1.00514C25.4908 1.32833 25.6711 1.76726 25.6711 2.22586V9.51118C25.6711 9.54595 25.6573 9.5783 25.6344 9.60142C25.6117 9.6244 25.5818 9.63642 25.5518 9.63642C25.5217 9.63642 25.4919 9.6244 25.4691 9.60142C25.4462 9.5783 25.4325 9.54595 25.4325 9.51118V2.22586C25.4325 1.83679 25.2798 1.46262 25.0062 1.18567C24.7324 0.908563 24.3599 0.751493 23.9702 0.750482Z"
+                          fill="#A4A4A4" stroke="#A4A4A4" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_98_836">
+                          <rect width="25.9644" height="26.04" fill="white" transform="translate(0.209229)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="buy__item-num">1926 SQFT</div>
+                </div>
+              </div>
+            </div>
+            <div class="buy__item">
+              <div class="buy__item-container">
+                <img class="buy__item-img" src="./images/buy/1.png" alt="">
+                <div class="buy__item-icon icon-heart"></div>
+                <img class="buy__item-logo" src="./images/icons/logo-white.svg" alt="">
+              </div>
+              <p class="buy__item-title">
+                3BR Apartment in AIRE Dubai,
+                Al Wasl (MS-2190)
+              </p>
+              <p class="buy__item-text">
+                USD 500.000
+              </p>
+              <div class="buy__item-box">
+                <div class="buy__item-block">
+                  <div class="buy__item-icon icon-bed"></div>
+                  <div class="buy__item-num">3</div>
+                </div>
+                <div class="buy__item-block">
+                  <div class="buy__item-icon icon-bath"></div>
+                  <div class="buy__item-num">2</div>
+                </div>
+                <div class="buy__item-block">
+                  <div class="buy__item-svg">
+                    <svg viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_98_836)">
+                        <path
+                          d="M19.8819 25.2897H19.8828C20.3862 25.2888 20.8678 25.0862 21.222 24.7279C21.576 24.3699 21.774 23.8856 21.774 23.3816V6.18001C21.774 5.67608 21.576 5.19182 21.222 4.83374C20.8678 4.47549 20.3862 4.27287 19.8828 4.27197H19.8819L2.84236 4.27197L2.84146 4.27197C2.33794 4.27287 1.85624 4.47528 1.50167 4.83327C1.14726 5.1911 0.948635 5.67514 0.94775 6.17913V6.18001L0.947749 23.3816L0.94775 23.3825C0.948635 23.8865 1.14726 24.3706 1.50167 24.7284C1.85625 25.0864 2.33796 25.2888 2.84146 25.2897H2.84236H19.8819ZM21.3861 4.65347L21.7352 4.308L21.3861 4.65347C21.7862 5.05782 22.012 5.60685 22.0125 6.18047V23.3812C22.012 23.9548 21.7862 24.5039 21.3861 24.9082C20.9861 25.3124 20.4447 25.5391 19.8809 25.5402H2.84283C2.27869 25.5396 1.73682 25.3132 1.33644 24.9089C0.935935 24.5046 0.709818 23.9553 0.709229 23.3814V6.18026C0.709818 5.60638 0.935933 5.05712 1.33644 4.65275C1.73677 4.24855 2.27855 4.02208 2.84259 4.02148H19.8814C20.445 4.02267 20.9862 4.24938 21.3861 4.65347Z"
+                          fill="#A4A4A4" stroke="#A4A4A4" />
+                        <path
+                          d="M23.9702 0.750482H23.9689H16.191C16.1609 0.750482 16.1311 0.738451 16.1084 0.715517C16.0855 0.692419 16.0718 0.660039 16.0718 0.625241C16.0718 0.590443 16.0855 0.558063 16.1084 0.534965C16.1311 0.512031 16.1609 0.5 16.191 0.5H23.9708C24.4205 0.501161 24.8524 0.682254 25.1715 1.00514C25.4908 1.32833 25.6711 1.76726 25.6711 2.22586V9.51118C25.6711 9.54595 25.6573 9.5783 25.6344 9.60142C25.6117 9.6244 25.5818 9.63642 25.5518 9.63642C25.5217 9.63642 25.4919 9.6244 25.4691 9.60142C25.4462 9.5783 25.4325 9.54595 25.4325 9.51118V2.22586C25.4325 1.83679 25.2798 1.46262 25.0062 1.18567C24.7324 0.908563 24.3599 0.751493 23.9702 0.750482Z"
+                          fill="#A4A4A4" stroke="#A4A4A4" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_98_836">
+                          <rect width="25.9644" height="26.04" fill="white" transform="translate(0.209229)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="buy__item-num">1926 SQFT</div>
+                </div>
+              </div>
+            </div>
+            <div class="buy__item">
+              <div class="buy__item-container">
+                <img class="buy__item-img" src="./images/buy/1.png" alt="">
+                <div class="buy__item-icon icon-heart"></div>
+                <img class="buy__item-logo" src="./images/icons/logo-white.svg" alt="">
+              </div>
+              <p class="buy__item-title">
+                3BR Apartment in AIRE Dubai,
+                Al Wasl (MS-2190)
+              </p>
+              <p class="buy__item-text">
+                USD 500.000
+              </p>
+              <div class="buy__item-box">
+                <div class="buy__item-block">
+                  <div class="buy__item-icon icon-bed"></div>
+                  <div class="buy__item-num">3</div>
+                </div>
+                <div class="buy__item-block">
+                  <div class="buy__item-icon icon-bath"></div>
+                  <div class="buy__item-num">2</div>
+                </div>
+                <div class="buy__item-block">
+                  <div class="buy__item-svg">
+                    <svg viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_98_836)">
+                        <path
+                          d="M19.8819 25.2897H19.8828C20.3862 25.2888 20.8678 25.0862 21.222 24.7279C21.576 24.3699 21.774 23.8856 21.774 23.3816V6.18001C21.774 5.67608 21.576 5.19182 21.222 4.83374C20.8678 4.47549 20.3862 4.27287 19.8828 4.27197H19.8819L2.84236 4.27197L2.84146 4.27197C2.33794 4.27287 1.85624 4.47528 1.50167 4.83327C1.14726 5.1911 0.948635 5.67514 0.94775 6.17913V6.18001L0.947749 23.3816L0.94775 23.3825C0.948635 23.8865 1.14726 24.3706 1.50167 24.7284C1.85625 25.0864 2.33796 25.2888 2.84146 25.2897H2.84236H19.8819ZM21.3861 4.65347L21.7352 4.308L21.3861 4.65347C21.7862 5.05782 22.012 5.60685 22.0125 6.18047V23.3812C22.012 23.9548 21.7862 24.5039 21.3861 24.9082C20.9861 25.3124 20.4447 25.5391 19.8809 25.5402H2.84283C2.27869 25.5396 1.73682 25.3132 1.33644 24.9089C0.935935 24.5046 0.709818 23.9553 0.709229 23.3814V6.18026C0.709818 5.60638 0.935933 5.05712 1.33644 4.65275C1.73677 4.24855 2.27855 4.02208 2.84259 4.02148H19.8814C20.445 4.02267 20.9862 4.24938 21.3861 4.65347Z"
+                          fill="#A4A4A4" stroke="#A4A4A4" />
+                        <path
+                          d="M23.9702 0.750482H23.9689H16.191C16.1609 0.750482 16.1311 0.738451 16.1084 0.715517C16.0855 0.692419 16.0718 0.660039 16.0718 0.625241C16.0718 0.590443 16.0855 0.558063 16.1084 0.534965C16.1311 0.512031 16.1609 0.5 16.191 0.5H23.9708C24.4205 0.501161 24.8524 0.682254 25.1715 1.00514C25.4908 1.32833 25.6711 1.76726 25.6711 2.22586V9.51118C25.6711 9.54595 25.6573 9.5783 25.6344 9.60142C25.6117 9.6244 25.5818 9.63642 25.5518 9.63642C25.5217 9.63642 25.4919 9.6244 25.4691 9.60142C25.4462 9.5783 25.4325 9.54595 25.4325 9.51118V2.22586C25.4325 1.83679 25.2798 1.46262 25.0062 1.18567C24.7324 0.908563 24.3599 0.751493 23.9702 0.750482Z"
+                          fill="#A4A4A4" stroke="#A4A4A4" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_98_836">
+                          <rect width="25.9644" height="26.04" fill="white" transform="translate(0.209229)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="buy__item-num">1926 SQFT</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="link" href="#">
+            See More
+            <svg viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L4 4L2.5 5.5L1 7" stroke="#49586B" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+
+      <div class="content">
+
+        <section class="popular">
+          <div class="container">
+            <div class="popular__border border">
+              <h3 class="popular__title">
+                POPULAR AREAS IN DUBAI
+              </h3>
+            </div>
+            <div class="popular__inner">
+              <div class="popular__swiper swiper">
+                <div class="popular__wrapper swiper-wrapper">
+                  <div class="popular__slide  swiper-slide">
+                    <img class="popular__slide-img" src="./images/popular/1.png" alt="">
+                    <div class="popular__slide-box">
+                      <p class="popular__slide-title">
+                        Palm Jebel Ali
+                      </p>
+                      <p class="popular__slide-price">
+                        from $900.000
+                      </p>
+                    </div>
+                  </div>
+                  <div class="popular__slide  swiper-slide">
+                    <img class="popular__slide-img" src="./images/popular/1.png" alt="">
+                    <div class="popular__slide-box">
+                      <p class="popular__slide-title">
+                        Palm Jebel Ali
+                      </p>
+                      <p class="popular__slide-price">
+                        from $900.000
+                      </p>
+                    </div>
+                  </div>
+                  <div class="popular__slide  swiper-slide">
+                    <img class="popular__slide-img" src="./images/popular/1.png" alt="">
+                    <div class="popular__slide-box">
+                      <p class="popular__slide-title">
+                        Palm Jebel Ali
+                      </p>
+                      <p class="popular__slide-price">
+                        from $900.000
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular__prev swiper-button-prev"></div>
+              <div class="popular__next swiper-button-next"></div>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="about">
+          <div class="container">
+            <div class="about__inner">
+              <div class="about__item">
+                <div class="popular__border border">
+                  <h3 class="popular__title">
+                    ABOUT US
+                  </h3>
+                </div>
+                <p class="about__text">
+                  EVA Real Estate is a dynamic brokerage firm serving local and international clients. Through our
+                  proactive approach, we always strive to build business relationships based on trust and honesty. Led
+                  by
+                  a team of experienced and knowledgeable professionals, our staff is always up to date with the latest
+                  developments and complies with current legislation and strong standards and creates value for our
+                  clients. Let us help you find your property, whether you are a first time buyer or an experienced
+                  investor. “Full transparency, incomparable honesty and discretion are the foundation of EVA Real
+                  Estate”
+                  – Elvira Sharshenalieva, CEO
+                </p>
+                <a class="link" href="#">
+                  Read More
+                  <svg viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L4 4L2.5 5.5L1 7" stroke="#49586B" />
+                  </svg>
+                </a>
+              </div>
+              <img class="about__img" src="./images/about/1.png" alt="">
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+
+      <section class="edge">
+        <div class="container">
+          <div class="edge__inner">
+            <div class="edge__item edge__item--left">
+              <div class="edge__icon icon-building"></div>
+              <p class="edge__text">
+                Reliability and security, which are ensured through proven settlement schemes, the use of strong banks
+                and clearing centers
+              </p>
+            </div>
+            <div class="edge__item edge__item--center">
+              <div class="edge__icon icon-home"></div>
+              <p class="edge__text">
+                Reliability and security, which are ensured through proven settlement schemes, the use of strong banks
+                and clearing centers
+              </p>
+            </div>
+            <div class="edge__item edge__item--right">
+              <div class="edge__icon icon-certificate"></div>
+              <p class="edge__text">
+                Reliability and security, which are ensured through proven settlement schemes, the use of strong banks
+                and clearing centers
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="feedback">
+        <img class="feedback__bg" src="./images/feedback/bg.png" alt="">
+        <div class="container">
+          <div class="feedback__inner">
+            <form class="feedback__form" action="">
+              <div class="feedback__border border">
+                <h3 class="feedback__title">
+                  FEEDBACK
+                </h3>
+              </div>
+              <p class="feedback__text">
+                Fill out the feedback form and our manager will contact you as soon as possible. Thank you for being
+                with us.
+              </p>
+              <fieldset class="feedback__form-fieldset">
+                <input class="feedback__form-input" type="text" name="name" placeholder="Name..." required>
+                <input class="feedback__form-input" type="text" name="phone" placeholder="Phone..." required>
+                <input class="feedback__form-input" type="email" name="name" placeholder="E-mail..." required>
+                <textarea class="feedback__form-textarea" rows="5" placeholder="Your Message..."></textarea>
+              </fieldset>
+              <button class="btn" href="#">
+                Send
+                <svg viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L4 4L2.5 5.5L1 7" stroke="#49586B" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a class="logo" href="#">
+            <img class="logo__img" src="./images/logo.svg" alt="">
+          </a>
+          <div class="footer__box">
+            <div class="footer__item">
+              <a class="footer__item-link" href="#">
+                About Us
+              </a>
+              <a class="footer__item-link" href="#">
+                Contacts
+              </a>
+            </div>
+            <div class="footer__item">
+              <a class="footer__item-link" href="#">
+                Off Plan Properties
+              </a>
+              <a class="footer__item-link" href="#">
+                Real Estate Catalog
+              </a>
+              <a class="footer__item-link" href="#">
+                About the Market
+              </a>
+            </div>
+            <div class="footer__item">
+              <a class="footer__item-link" href="tel:+971981225758">
+                +971 98 122 5758
+              </a>
+              <a class="footer__item-link" href="mailto:info.investestatedxb.ae">
+                info.investestatedxb.ae
+              </a>
+              <p class="footer__item-text">
+                UAE, Dubai. Motor City,
+                Control Tower, Office 2201
+              </p>
+            </div>
+          </div>
+          <div class="footer__item">
+            <p class="footer__item-text">
+              Stay in Touch
+            </p>
+            <div class="footer__item-box">
+              <a class="footer__item-icon icon-fb" href="#"></a>
+              <a class="footer__item-icon icon-inst" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <p class="footer__copy">
+          © 2023 Dubai Invest Estate LLC.
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/0.9.0/jquery.mask.min.js
+"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>

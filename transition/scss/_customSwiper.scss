@@ -1,0 +1,39 @@
+.swiper-button {
+
+  &-prev,
+  &-next {
+    margin-top: unset;
+    transition: opacity .38s ease-in-out;
+
+    &::after {
+      color: #fff;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background-color: #FDC300;
+      z-index: -1;
+    }
+  }
+
+  &-prev {
+    &::after {
+      margin-right: 5px;
+    }
+  }
+
+  &-next {
+    &::after {
+      margin-left: 5px;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icons/icomoon.eot?yp333s');
+  src: url('../fonts/icons/icomoon.eot?yp333s#iefix') format('embedded-opentype'),
+    url('../fonts/icons/icomoon.ttf?yp333s') format('truetype'),
+    url('../fonts/icons/icomoon.woff?yp333s') format('woff'),
+    url('../fonts/icons/icomoon.svg?yp333s#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-next:before {
+  content: '\e900';
+}
+.icon-play:before {
+  content: '\e901';
+}
+.icon-prev:before {
+  content: '\e902';
+}
+.icon-star:before {
+  content: '\e903';
+}
+.icon-tg:before {
+  content: '\e904';
+}
+.icon-tg-rtt:before {
+  content: '\e905';
+}
+.icon-vk:before {
+  content: '\e906';
+}
+.icon-vk-rtt:before {
+  content: '\e907';
+}
+.icon-yt:before {
+  content: '\e908';
+}
+.icon-yt-rtt:before {
+  content: '\e909';
+}
