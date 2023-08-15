@@ -21,16 +21,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 4;
-  }
-
-  &__bottom {
-    position: absolute;
-    left: 0;
-    bottom: 0;
     width: 100%;
-    @include fluid(height, 120px, 320px);
-    background-repeat: no-repeat;
-    z-index: 2;
   }
 
   &__bg {

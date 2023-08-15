@@ -1,7 +1,7 @@
 .feedback {
   position: relative;
   @include fluid(padding-top, 30px, 58px);
-  @include fluid(padding-bottom, 60px, 106px);
+  @include fluid(padding-bottom, 80px, 106px);
 
   &::after {
     content: '';
@@ -9,7 +9,7 @@
     left: 0;
     bottom: -2px;
     width: 100%;
-    @include fluid(height, 173px, 250px);
+    @include fluid(height, 160px, 330px);
     background-image: url('../images/feedback/bottom.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,6 +27,7 @@
     right: -2px;
     @include fluid(top, 0px, -18px);
     background-image: url('../images/buy/bg-1.png');
+    background-position: left bottom;
   }
 
   &__bg {
@@ -37,6 +38,8 @@
     top: 0;
     -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: left bottom;
+    object-position: left bottom;
     z-index: -3;
   }
 

@@ -38,12 +38,13 @@
   &__item {
     &-container {
       position: relative;
+      overflow: hidden;
 
       &::after {
         content: '';
         position: absolute;
-        left: 0;
-        bottom: 0;
+        left: -2px;
+        bottom: -2px;
         border-right: 84px solid transparent;
         border-bottom: 84px solid #EDEDED;
       }

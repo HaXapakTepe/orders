@@ -16,6 +16,20 @@
     z-index: -1;
   }
 
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    @include fluid(height, 352px, 690px);
+    // @include fluid(width, px, 1020px);
+    left: 0;
+    @include fluid(bottom, 51px, -170px);
+    background-image: url('../images/about/bg-4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+
   &__inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -34,9 +48,11 @@
   &__img {
     -o-object-fit: cover;
     object-fit: cover;
+    height: 100%;
   }
 
   .link {
     margin-left: auto;
+    background-color: transparent;
   }
 }

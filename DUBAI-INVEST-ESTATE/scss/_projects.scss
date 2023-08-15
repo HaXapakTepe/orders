@@ -4,28 +4,33 @@
   @include fluid(margin-bottom, 60px, 120px);
   z-index: 1;
 
-  &::after,
+  // &::after,
   &::before {
     content: '';
     position: absolute;
     height: 100%;
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: -1;
-  }
-
-  &::after {
-    @include fluid(width, 440px, 714px);
-    left: 0;
-    @include fluid(top, -60px, -113px);
-    background-image: url('../images/projects/bg-1.png');
-  }
-
-  &::before {
     @include fluid(width, 425px, 721px);
     right: 0;
     @include fluid(top, 40px, 70px);
     background-image: url('../images/projects/bg-2.png');
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    @include fluid(top, -165px, -312px);
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/projects/top.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    pointer-events: none;
+    z-index: -1;
   }
 
   &__inner {

@@ -55,12 +55,14 @@ $(document).ready(function () {
 
   const swiper = new Swiper('.top__bg', {
     effect: 'fade',
+    loop: true,
     // allowTouchMove: false,
     slidesPerView: 1,
   })
 
   const swiper2 = new Swiper('.top__swiper', {
     spaceBetweenViews: 50,
+    loop: true,
     thumbs: {
       swiper: swiper,
     },
@@ -76,6 +78,7 @@ $(document).ready(function () {
     const popularSwiper = new Swiper('.popular__swiper', {
       slidesPerView: 1,
       spaceBetween: 10,
+      loop: true,
       navigation: {
         nextEl: '.popular__next',
         prevEl: '.popular__prev',

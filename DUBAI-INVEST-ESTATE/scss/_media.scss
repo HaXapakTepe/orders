@@ -185,8 +185,13 @@
       grid-template-columns: 1fr;
     }
 
+    &__border {
+      order: -2;
+    }
+
     &__img {
-      display: none;
+      order: -1;
+      height: 400px;
     }
   }
 
@@ -227,17 +232,33 @@
     }
   }
 
+  .partners {
+    &__inner {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
   .buy {
     &__inner {
       grid-template-columns: 1fr;
     }
-  }
 
-  // .feedback {
-  //   &__inner {
-  //     grid-template-columns: 1fr;
-  //   }
-  // }
+    &__item {
+      &-container {
+        overflow: hidden;
+
+        &::after {
+          left: -1px;
+          bottom: 9px;
+        }
+
+        .buy__item-icon {
+          bottom: 19px;
+        }
+      }
+    }
+  }
 
   .footer {
     &__box {

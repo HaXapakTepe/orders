@@ -3,11 +3,14 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  // max-width: 1440px;
   @include fluid(padding-top, 20px, 30px);
   @include fluid(padding-bottom, 10px, 20px);
-  // background-color: #fff;
-  background: linear-gradient(166deg, #F4F4F4 0%, rgba(237, 237, 237, 0.72) 53.13%, rgba(217, 217, 217, 0.00) 100%);
+  background-color: #EDEDED;
+  z-index: 20;
+
+  &--transparent {
+    background: linear-gradient(166deg, #F4F4F4 0%, rgba(237, 237, 237, 0.72) 53.13%, rgba(217, 217, 217, 0.00) 100%);
+  }
 
   width: 100%;
 
@@ -25,6 +28,7 @@
 
   &__icon {
     font-size: 22px;
+    color: #101820;
   }
 
   &__item {
