@@ -4,7 +4,6 @@
   @include fluid(margin-bottom, 60px, 120px);
   z-index: 1;
 
-  // &::after,
   &::before {
     content: '';
     position: absolute;
@@ -21,10 +20,12 @@
   &::after {
     content: '';
     position: absolute;
-    @include fluid(top, -165px, -312px);
-    left: 0;
+    @include fluid(top, -165px, -302px);
+    left: 50%;
     height: 100%;
     width: 100%;
+    max-width: 1920px;
+    transform: translateX(-50%);
     background-image: url('../images/projects/top.png');
     background-repeat: no-repeat;
     background-size: cover;
