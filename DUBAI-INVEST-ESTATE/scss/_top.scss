@@ -1,14 +1,17 @@
+.gradient {
+  position: relative;
+}
+
 .top {
   position: relative;
-  padding-top: 100px;
-  @include fluid(padding-top, 87px, 100px);
+  // @include fluid(padding-top, 87px, 100px);
 
   &__gradient {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 89%;
+    height: 100%;
     background-repeat: no-repeat;
     -o-object-fit: cover;
     object-fit: cover;
@@ -27,7 +30,7 @@
   &__bg {
     &-slide {
       opacity: 0;
-      @include fluid(height, 500px, 748px);
+      @include fluid(height, 500px, 855px);
       -o-object-fit: cover;
       object-fit: cover;
       -o-object-position: bottom;
