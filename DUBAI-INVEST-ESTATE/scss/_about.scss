@@ -20,10 +20,10 @@
     content: '';
     position: absolute;
     width: 100%;
-    @include fluid(height, 352px, 690px);
-    // @include fluid(width, px, 1020px);
+    @include fluid(height, 360px, 655px);
+    @include fluid(width, 545px, 955px);
     left: 0;
-    @include fluid(bottom, 51px, -170px);
+    @include fluid(bottom, 45px, -170px);
     background-image: url('../images/about/bg-4.png');
     background-repeat: no-repeat;
     background-size: contain;
